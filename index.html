@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="litestyle.css"/>
+  <script src="FileSaver.js"></script>
+  <title></title>
+</head>
+<body>
+  <div id="root" >
+  <div class="container-grid grid-center">
+  <h1 class="ts-xxl text-mono text-center m-none">NEXON</h1>
+    </div>
+  <div class="container container-grid grid-center">
+    <div class="search">
+      <input class="input input-success" type="search" id="searchBar" placeholder="search your projects" />
+    </div>
+    <h3 class="text-center text-mono">your projects</h3>
+    <ul id="parent" class="list bg-light">
+    </ul>
+    <button onclick="newProject()" class="btn btn-success">+ create new</button>
+  </div>
+  
+  <div id="editor" class="light-bg pos-fixed">
+    <textarea spellcheck="false" id="code-input" class="input m-none" style="width:90vw;height:30vh;color:purple;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </textarea>
+    <iframe id="output" style="width:90vw;height:30vh" src=""></iframe>
+    <button onclick="closeEditor()" class="btn btn-danger">close & save</button>
+  </div>
+  </div>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
